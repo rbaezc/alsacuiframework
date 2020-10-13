@@ -1,0 +1,67 @@
+@import 'color';
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+// text sizes
+@for $i from 1 through 4 {
+    .text-#{$i} {
+        font-size:#{$i}em;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+
+.text-normal{
+    font-weight: 400;
+}
+
+.text-info{
+    color:$info;
+}
+
+.text-black{
+    color:$black;
+}
+
+.text-darkgrey{
+    color:$dark-grey;
+}
+
+.text-white{
+    color:#fff;
+}
+
+.text-grey{
+    color:$grey;
+}
